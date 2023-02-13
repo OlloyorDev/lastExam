@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'src/home/bottomnavigationbar_widget.dart';
 import 'package:lastexam/src/home/state_managment/home_bloc/home_bloc_bloc.dart';
+import 'src/home/bottomnavigationbar_widget.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarBrightness: Brightness.light,
+      statusBarColor: Colors.amberAccent));
   runApp(MultiBlocProvider(providers: [
     BlocProvider(
       create: (context) => HomeBlocBloc()..add(IntintialHomeEvent()),

@@ -22,7 +22,7 @@ class TabbarWidget extends StatelessWidget {
         indicatorSize: TabBarIndicatorSize.label,
         labelColor: Color(0xfff0fb8d3),
         unselectedLabelColor: Colors.black26,
-        labelPadding: const EdgeInsets.symmetric(horizontal: 0),
+        labelPadding: const EdgeInsets.all(0),
         tabs: [
           Tab(
             text: 'Полёт',
