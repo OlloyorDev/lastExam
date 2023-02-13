@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import '../widgets/component_widget.dart';
+import '../widgets/news_widget.dart';
 import '../widgets/popular_tour_widget.dart';
 import '../widgets/tabbar_widget.dart';
 import '../widgets/tabbar_widget_two.dart';
@@ -38,61 +39,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   TabbarWidgetTwo(),
                   TicketsButtonWidget(),
                   PopularTourWidget(),
-                  SliverToBoxAdapter(
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 24, left: 11),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            " Новые предложение",
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.w600),
-                          ),
-                          const SizedBox(height: 12),
-                          Container(
-                            height: 210,
-                            width: double.infinity,
-                            child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemCount: 5,
-                              itemBuilder: (context, index) {
-                                return Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      margin: const EdgeInsets.all(4),
-                                      decoration: BoxDecoration(
-                                          border: Border.all(
-                                              color: const Color(0xfff0fb8d3),
-                                              width: 1),
-                                          borderRadius:
-                                              BorderRadius.circular(8)),
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(1.0),
-                                        child: Container(
-                                          height: 75.25,
-                                          width: 77.6,
-                                          margin: const EdgeInsets.all(2),
-                                          decoration: BoxDecoration(
-                                            color: Colors.amber,
-                                            borderRadius:
-                                                BorderRadius.circular(4),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                );
-                              },
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  NewWidget(),
                 ],
               ),
             ),
