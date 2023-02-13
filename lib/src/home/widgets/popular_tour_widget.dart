@@ -40,7 +40,7 @@ class PopularTourWidget extends StatelessWidget {
                       Container(
                         height: 150,
                         width: 150,
-                        margin: const EdgeInsets.symmetric(horizontal: 6),
+                        margin: const EdgeInsets.symmetric(horizontal: 5),
                         decoration: BoxDecoration(
                             color: Colors.amber,
                             borderRadius: BorderRadius.circular(8),

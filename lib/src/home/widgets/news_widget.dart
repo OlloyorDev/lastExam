@@ -8,7 +8,7 @@ class NewWidget extends StatelessWidget {
     'assets/news/photo1.png',
     'assets/news/photo2.png',
     'assets/news/photo3.png',
-    'assets/news/photo4.png'
+    'assets/news/photo4.jpg'
   ];
 
   @override
